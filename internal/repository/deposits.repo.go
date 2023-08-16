@@ -2,6 +2,7 @@ package repo
 
 import (
 	"database/sql"
+	"fmt"
 	"project-name/internal/models"
 )
 
@@ -24,6 +25,9 @@ func (d *depositRepo) Add(accountId string, deposit *models.Deposit) (*models.De
 	if err != nil {
 		return nil, err
 	}
+
+	fmt.Println("AccountId: ", accountId)
+	fmt.Println("DepositId: ", id)
 
 	return d.Get(id)
 }
