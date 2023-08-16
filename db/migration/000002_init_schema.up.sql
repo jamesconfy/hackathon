@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS accounts (
+	id uuid DEFAULT uuid_generate_v4(),
+	user_id uuid NOT NULL,
+	number VARCHAR(12) DEFAULT '8100000000',
+	balance DECIMAL DEFAULT 72000.00,
+	date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	date_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	
+	PRIMARY KEY(id),
+	FOREIGN KEY(user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+-- INSERT INTO accounts(user_id) VALUES('379f3de3-d5c9-4486-abc8-d92405581b86');

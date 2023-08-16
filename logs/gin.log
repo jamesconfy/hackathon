@@ -1,0 +1,182 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2023/05/06 - 17:27:32 | 200 |     190.798µs |             ::1 | GET      "/api/v1/"
+[GIN] 2023/05/06 - 17:27:35 | 200 |     377.356µs |             ::1 | GET      "/api/v1/swagger/index.html"
+[GIN] 2023/05/06 - 17:27:35 | 200 |     419.034µs |             ::1 | GET      "/api/v1/swagger/swagger-ui.css"
+[GIN] 2023/05/06 - 17:27:35 | 200 |    1.171971ms |             ::1 | GET      "/api/v1/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2023/05/06 - 17:27:35 | 200 |   11.539724ms |             ::1 | GET      "/api/v1/swagger/swagger-ui-bundle.js"
+[GIN] 2023/05/06 - 17:27:36 | 200 |      147.93µs |             ::1 | GET      "/api/v1/swagger/doc.json"
+[GIN] 2023/05/06 - 17:27:42 | 400 |     291.042µs |             ::1 | POST     "/api/v1/users"
+[GIN] 2023/05/06 - 17:27:54 | 500 |    6.923437ms |             ::1 | POST     "/api/v1/users"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2023/05/08 - 12:12:00 | 200 |     810.865µs |             ::1 | GET      "/api/v1/swagger/index.html"
+[GIN] 2023/05/08 - 12:12:00 | 200 |     275.049µs |             ::1 | GET      "/api/v1/swagger/swagger-ui.css"
+[GIN] 2023/05/08 - 12:12:00 | 200 |     441.531µs |             ::1 | GET      "/api/v1/swagger/swagger-ui-standalone-preset.js"
+[GIN] 2023/05/08 - 12:12:00 | 200 |     1.33281ms |             ::1 | GET      "/api/v1/swagger/swagger-ui-bundle.js"
+[GIN] 2023/05/08 - 12:12:00 | 200 |     163.328µs |             ::1 | GET      "/api/v1/swagger/doc.json"
+[GIN] 2023/05/08 - 12:12:00 | 200 |       67.13µs |             ::1 | GET      "/api/v1/swagger/favicon-32x32.png"
+[GIN] 2023/05/08 - 12:12:14 | 500 |   12.047328ms |             ::1 | POST     "/api/v1/users"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2023/05/08 - 12:12:55 | 500 |    4.404854ms |             ::1 | POST     "/api/v1/users"
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /api/v1/                  --> project-name/cmd/handlers.HomeHandler.Home-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users             --> project-name/cmd/handlers.UserHandler.Create-fm (3 handlers)
+[GIN-debug] POST   /api/v1/users/login       --> project-name/cmd/handlers.UserHandler.Login-fm (3 handlers)
+[GIN-debug] GET    /api/v1/swagger/*any      --> github.com/swaggo/gin-swagger.CustomWrapHandler.func1 (3 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2023/05/08 - 12:15:56 | 500 |   55.774167ms |             ::1 | POST     "/api/v1/users"

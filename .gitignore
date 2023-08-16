@@ -1,0 +1,8 @@
+**.venv**
+.env*
+**.vscode**
+.dockerignore
+docker-compose.yml
+fly.toml
+__debug_bin
+.DS_Store

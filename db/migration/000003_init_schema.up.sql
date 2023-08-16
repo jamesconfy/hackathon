@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS deposits(
+	id uuid DEFAULT uuid_generate_v4(),
+	back_image VARCHAR(250) NOT NULL,
+	front_image VARCHAR(250) NOT NULL,
+	user_id uuid,
+	date_created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	date_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	
+	PRIMARY KEY(id),
+	FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+)
