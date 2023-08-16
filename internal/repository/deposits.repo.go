@@ -2,6 +2,7 @@ package repo
 
 import (
 	"database/sql"
+	"project-name/config"
 	"project-name/internal/models"
 )
 
@@ -18,9 +19,9 @@ type depositRepo struct {
 func (d *depositRepo) Add(accountId string, deposit *models.Deposit) (*models.Deposit, error) {
 	var dep models.Deposit
 
-	query := `INSERT INTO deposits (account_id, back_image, front_image) VALUES($1, $2, $3) RETURNING id, back_image, front_image, status, date_created, date_updated`
+	query := `INSERT INTO deposits (user_id, account_id, back_image, front_image) VALUES($1, $2, $3) RETURNING id, back_image, front_image, status, date_created, date_updated`
 
-	err := d.conn.QueryRow(query, accountId, deposit.BackImage, deposit.FrontImage).Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated)
+	err := d.conn.QueryRow(query, config.AppConfig.DEFAULT_USER_ID, accountId, deposit.BackImage, deposit.FrontImage).Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated)
 	if err != nil {
 		return nil, err
 	}
