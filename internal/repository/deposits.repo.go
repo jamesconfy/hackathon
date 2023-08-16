@@ -19,7 +19,7 @@ type depositRepo struct {
 func (d *depositRepo) Add(deposit *models.Deposit) (*models.Deposit, error) {
 	var dep models.Deposit
 
-	query := `INSERT INTO deposits (user_id, account_id, back_image, front_image) VALUES($1, $2, $3) RETURNING id, back_image, front_image, status, date_created, date_updated`
+	query := `INSERT INTO deposits (user_id, account_id, back_image, front_image) VALUES($1, $2, $3, $4) RETURNING id, back_image, front_image, status, date_created, date_updated`
 
 	userId := config.AppConfig.DEFAULT_USER_ID
 	accountId := config.AppConfig.DEFAULT_ACCOUNT_ID
@@ -29,7 +29,8 @@ func (d *depositRepo) Add(deposit *models.Deposit) (*models.Deposit, error) {
 		return nil, err
 	}
 
-	return &dep, nil
+	// fmt.Println("Deposit: ", &dep)
+	return d.Get(dep.Id)
 }
 
 func (d *depositRepo) Get(depositId string) (*models.Deposit, error) {

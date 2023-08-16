@@ -38,7 +38,7 @@ func (c *depositSrv) Add(backImage, frontImage *multipart.FileHeader) (*models.D
 
 	depo, errr := c.depositRepo.Add(&deposit)
 	if errr != nil {
-		return nil, se.Internal(err)
+		return nil, se.Internal(errr)
 	}
 
 	return depo, nil
