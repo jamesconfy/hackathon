@@ -40,7 +40,7 @@ func (c *depositSrv) Add(backImage, frontImage *multipart.FileHeader) (*models.D
 	depo, errr := c.depositRepo.Add(accountId, &deposit)
 	fmt.Println(depo)
 	if errr != nil {
-		return nil, se.NotFoundOrInternal(err, "deposit not found")
+		return nil, se.Internal(err)
 	}
 
 	return depo, nil

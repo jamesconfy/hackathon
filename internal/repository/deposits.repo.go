@@ -29,7 +29,7 @@ func (d *depositRepo) Add(accountId string, deposit *models.Deposit) (*models.De
 	fmt.Println("AccountId: ", accountId)
 	fmt.Println("DepositId: ", dep.Id)
 
-	return d.Get(dep.Id)
+	return &dep, nil
 }
 
 func (d *depositRepo) Get(depositId string) (*models.Deposit, error) {
