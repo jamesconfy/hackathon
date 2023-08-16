@@ -105,3 +105,12 @@ func ConflictOrInternal(err error, descriptions ...string) *ServiceError {
 		return Internal(err)
 	}
 }
+
+func BadRequestOrInternal(description string, err error) *ServiceError {
+	switch {
+	case errors.Is(err, nil):
+		return BadRequest(description)
+	default:
+		return Internal(err)
+	}
+}
