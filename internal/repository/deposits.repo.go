@@ -29,22 +29,25 @@ func (d *depositRepo) Add(deposit *models.Deposit) (*models.Deposit, error) {
 }
 
 func (d *depositRepo) Get(depositId string) (*models.Deposit, error) {
+	var user models.User
 	var dep models.Deposit
 
-	query := `SELECT id, back_image, front_image, user_id, date_created, date_updated FROM deposits WHERE id = $1`
+	query := `SELECT u.id, u.first_name, u.last_name, u.date_created, u.date_updated, d.id, d.back_image, d.front_image, d.status, d.date_created, d.date_updated, a.number FROM deposits d INNER JOIN users u ON u.id = d.user_id INNER JOIN accounts a ON a.id = d.account_id WHERE d.id = $1`
 
-	err := d.conn.QueryRow(query, depositId).Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.UserId, &dep.DateCreated, &dep.DateUpdated)
+	err := d.conn.QueryRow(query, depositId).Scan(&user.Id, &user.FirstName, &user.LastName, &user.DateCreated, &user.DateUpdated, &dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated, &dep.AccountNumber)
 	if err != nil {
 		return nil, err
 	}
 
+	user.GetFullName()
+	dep.User = &user
 	return &dep, nil
 }
 
 func (d *depositRepo) GetAll() ([]*models.Deposit, error) {
 	var deposits []*models.Deposit
 
-	query := `SELECT id, back_image, front_image, user_id, date_created, date_updated FROM deposits`
+	query := `SELECT u.id, u.first_name, u.last_name, u.date_created, u.date_updated, d.id, d.back_image, d.front_image, d.status, d.date_created, d.date_updated, a.number FROM deposits d INNER JOIN users u ON u.id = d.user_id INNER JOIN accounts a ON a.id = d.account_id`
 
 	rows, err := d.conn.Query(query)
 	if err != nil {
@@ -53,12 +56,15 @@ func (d *depositRepo) GetAll() ([]*models.Deposit, error) {
 
 	for rows.Next() {
 		var dep models.Deposit
+		var user models.User
 
-		err := rows.Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.UserId, &dep.DateCreated, &dep.DateUpdated)
+		err := rows.Scan(&user.Id, &user.FirstName, &user.LastName, &user.DateCreated, &user.DateUpdated, &dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated, &dep.AccountNumber)
 		if err != nil {
 			return nil, err
 		}
 
+		user.GetFullName()
+		dep.User = &user
 		deposits = append(deposits, &dep)
 	}
 

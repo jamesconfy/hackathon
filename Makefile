@@ -5,7 +5,7 @@ migrate_down:
 	migrate -path db/migration -database """ -verbose down
 
 migrate_force:
-	migrate -path db/migration -database "postgresql://postgres:VOhDoA6QJNgzCSveCAIQ@containers-us-west-141.railway.app:7711/railway?sslmode=disable" force $(version)
+	migrate -path db/migration -database "" force $(version)
 
 run:	
 	go build cheque_deposit.go && ./cheque_deposit --m=false

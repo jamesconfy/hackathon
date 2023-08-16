@@ -90,7 +90,7 @@ func init() {
 	}
 
 	if mode == "production" {
-		loadDev()
+		loadProd()
 	}
 
 	aws_access_key := config.AppConfig.AWS_ACCESS_KEY
@@ -101,8 +101,6 @@ func init() {
 	if err != nil {
 		log.Printf("Error occured: %v", err)
 	}
-
-	fmt.Println("Migration: ", *migrate)
 
 	if *migrate {
 		if err := utils.Migration(dsn); err != nil {
