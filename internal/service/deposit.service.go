@@ -38,8 +38,9 @@ func (c *depositSrv) Add(backImage, frontImage *multipart.FileHeader) (*models.D
 
 	accountId := config.AppConfig.DEFAULT_ACCOUNT_ID
 	depo, errr := c.depositRepo.Add(accountId, &deposit)
+	fmt.Println(depo)
 	if errr != nil {
-		return nil, se.Internal(errr)
+		return nil, se.NotFoundOrInternal(err, "deposit not found")
 	}
 
 	return depo, nil
