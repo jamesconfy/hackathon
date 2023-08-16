@@ -7,7 +7,7 @@ import (
 )
 
 type DepositRepo interface {
-	Add(accountId string, deposit *models.Deposit) (*models.Deposit, error)
+	Add(deposit *models.Deposit) (*models.Deposit, error)
 	Get(depositId string) (*models.Deposit, error)
 	GetAll() ([]*models.Deposit, error)
 }
@@ -16,12 +16,15 @@ type depositRepo struct {
 	conn *sql.DB
 }
 
-func (d *depositRepo) Add(accountId string, deposit *models.Deposit) (*models.Deposit, error) {
+func (d *depositRepo) Add(deposit *models.Deposit) (*models.Deposit, error) {
 	var dep models.Deposit
 
 	query := `INSERT INTO deposits (user_id, account_id, back_image, front_image) VALUES($1, $2, $3) RETURNING id, back_image, front_image, status, date_created, date_updated`
 
-	err := d.conn.QueryRow(query, config.AppConfig.DEFAULT_USER_ID, accountId, deposit.BackImage, deposit.FrontImage).Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated)
+	userId := config.AppConfig.DEFAULT_USER_ID
+	accountId := config.AppConfig.DEFAULT_ACCOUNT_ID
+
+	err := d.conn.QueryRow(query, userId, accountId, deposit.BackImage, deposit.FrontImage).Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated)
 	if err != nil {
 		return nil, err
 	}
