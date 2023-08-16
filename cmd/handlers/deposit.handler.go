@@ -19,13 +19,13 @@ type depositHandler struct {
 }
 
 func (d *depositHandler) Add(c *gin.Context) {
-	backImage, err := c.FormFile("backImage")
+	backImage, err := c.FormFile("back_image")
 	if err != nil {
 		response.Error(c, *se.BadRequest("error when getting back image"))
 		return
 	}
 
-	frontImage, err := c.FormFile("frontImage")
+	frontImage, err := c.FormFile("front_image")
 	if err != nil {
 		response.Error(c, *se.BadRequest("error when getting front image"))
 		return

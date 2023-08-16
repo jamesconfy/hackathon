@@ -1,11 +1,11 @@
 migrate_up:
-	migrate -path db/migration -database "" -verbose up
+	migrate -path db/migration -database "postgresql://postgres:VOhDoA6QJNgzCSveCAIQ@containers-us-west-141.railway.app:7711/railway" -verbose up
 
 migrate_down:
 	migrate -path db/migration -database """ -verbose down
 
 migrate_force:
-	migrate -path db/migration -database "" force $(version)
+	migrate -path db/migration -database "postgresql://postgres:VOhDoA6QJNgzCSveCAIQ@containers-us-west-141.railway.app:7711/railway" force $(version)
 
 run:	
 	go build cheque_deposit.go && ./cheque_deposit --m=false

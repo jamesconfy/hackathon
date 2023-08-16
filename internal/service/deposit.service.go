@@ -36,7 +36,8 @@ func (c *depositSrv) Add(backImage, frontImage *multipart.FileHeader) (*models.D
 		return nil, se.Internal(err, "error when uploading back image")
 	}
 
-	depo, errr := c.depositRepo.Add(&deposit)
+	accountId := config.AppConfig.DEFAULT_ACCOUNT_ID
+	depo, errr := c.depositRepo.Add(accountId, &deposit)
 	if errr != nil {
 		return nil, se.Internal(errr)
 	}

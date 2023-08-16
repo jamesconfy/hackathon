@@ -10,7 +10,7 @@ type Deposit struct {
 	BackImage     string    `json:"back_image"`
 	FrontImage    string    `json:"front_image"`
 	AccountNumber string    `json:"account_number"`
-	UserId        string    `json:"user_id"`
+	UserId        string    `json:"-"`
 	Status        string    `json:"status"`
 	User          *User     `json:"user"`
 	DateCreated   time.Time `json:"date_created"`
