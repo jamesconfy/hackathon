@@ -36,11 +36,12 @@ var migrate = flag.Bool("m", false, "for migration")
 
 func Setup() {
 	router := gin.New()
+	router.Use(middleware.CORS())
+
 	router.MaxMultipartMemory = 1 << 20
 	v1 := router.Group("/api/v1")
 	v1.Use(gin.Logger())
 	v1.Use(gin.Recovery())
-	router.Use(middleware.CORS())
 
 	db, err := sql.New(dsn)
 	if err != nil {
