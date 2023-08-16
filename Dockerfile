@@ -10,6 +10,6 @@ LABEL Name=cheque_deposit Version=0.0.1
 
 RUN go build -o cheque_deposit
 
-EXPOSE  1010
+EXPOSE  8080
 
 CMD [ "./cheque_deposit", "--m=true" ]
