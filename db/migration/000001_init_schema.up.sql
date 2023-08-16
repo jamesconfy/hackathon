@@ -1,4 +1,4 @@
-CREATE EXTENSION "uuid-ossp";
+-- CREATE EXTENSION "uuid-ossp";
 
 CREATE TABLE IF NOT EXISTS users(
 	id uuid DEFAULT uuid_generate_v4(),
