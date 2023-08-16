@@ -17,19 +17,19 @@ type depositRepo struct {
 }
 
 func (d *depositRepo) Add(accountId string, deposit *models.Deposit) (*models.Deposit, error) {
-	var id string
+	var dep models.Deposit
 
-	query := `INSERT INTO deposits (account_id, back_image, front_image) VALUES($1, $2, $3) RETURNING id`
+	query := `INSERT INTO deposits (account_id, back_image, front_image) VALUES($1, $2, $3) RETURNING id, back_image, front_image, status, date_created, date_updated`
 
-	err := d.conn.QueryRow(query, accountId, deposit.BackImage, deposit.FrontImage).Scan(&id)
+	err := d.conn.QueryRow(query, accountId, deposit.BackImage, deposit.FrontImage).Scan(&dep.Id, &dep.BackImage, &dep.FrontImage, &dep.Status, &dep.DateCreated, &dep.DateUpdated)
 	if err != nil {
 		return nil, err
 	}
 
 	fmt.Println("AccountId: ", accountId)
-	fmt.Println("DepositId: ", id)
+	fmt.Println("DepositId: ", dep.Id)
 
-	return d.Get(id)
+	return d.Get(dep.Id)
 }
 
 func (d *depositRepo) Get(depositId string) (*models.Deposit, error) {
