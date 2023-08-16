@@ -90,7 +90,7 @@ func init() {
 	}
 
 	if mode == "production" {
-		loadProd()
+		loadDev()
 	}
 
 	aws_access_key := config.AppConfig.AWS_ACCESS_KEY
