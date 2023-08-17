@@ -12,8 +12,9 @@ func DepositRoute(router *gin.RouterGroup, depositService service.DepositService
 	deposit := router.Group("/deposits/cheque")
 	{
 		deposit.POST("", handler.Add)
-		deposit.GET("/:depositId", handler.Get)
 		deposit.GET("", handler.GetAll)
+		deposit.GET("/:depositId", handler.Get)
+		deposit.PATCH("/:depositId", handler.Update)
 	}
 
 }

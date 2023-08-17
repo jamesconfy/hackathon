@@ -10,6 +10,7 @@ type DepositRepo interface {
 	Add(deposit *models.Deposit) (*models.Deposit, error)
 	Get(depositId string) (*models.Deposit, error)
 	GetAll() ([]*models.Deposit, error)
+	Update(deposit *models.Deposit) (*models.Deposit, error)
 }
 
 type depositRepo struct {
@@ -74,6 +75,20 @@ func (d *depositRepo) GetAll() ([]*models.Deposit, error) {
 	}
 
 	return deposits, nil
+}
+
+// Update implements DepositRepo.
+func (d *depositRepo) Update(deposit *models.Deposit) (*models.Deposit, error) {
+	var id string
+
+	query := `UPDATE deposits SET status = $1, date_updated = CURRENT_TIMESTAMP WHERE id = $2 RETURNING id`
+
+	err := d.conn.QueryRow(query, deposit.Status, deposit.Id).Scan(&id)
+	if err != nil {
+		return nil, err
+	}
+
+	return d.Get(id)
 }
 
 func NewDepositRepo(conn *sql.DB) DepositRepo {
