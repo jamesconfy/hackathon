@@ -53,7 +53,7 @@ func (d *depositRepo) Get(depositId string) (*models.Deposit, error) {
 func (d *depositRepo) GetAll() ([]*models.Deposit, error) {
 	var deposits []*models.Deposit
 
-	query := `SELECT u.id, u.first_name, u.last_name, u.date_created, u.date_updated, d.id, d.back_image, d.front_image, d.status, d.date_created, d.date_updated, a.number FROM deposits d INNER JOIN users u ON u.id = d.user_id INNER JOIN accounts a ON a.id = d.account_id`
+	query := `SELECT u.id, u.first_name, u.last_name, u.date_created, u.date_updated, d.id, d.back_image, d.front_image, d.status, d.date_created, d.date_updated, a.number FROM deposits d INNER JOIN users u ON u.id = d.user_id INNER JOIN accounts a ON a.id = d.account_id ORDER BY d.date_created desc`
 
 	rows, err := d.conn.Query(query)
 	if err != nil {
